@@ -1,0 +1,28 @@
+# --- General Python Files and Directories ---
+# Ignore compiled Python files and cache
+__pycache__/
+*.pyc
+
+# Ignore Jupyter notebook checkpoints (if using notebooks)
+.ipynb_checkpoints/
+
+# Ignore local virtual environment directory
+venv/
+
+# --- Large/Generated Output Files Specific to 05_test Project (Per README) ---
+
+# Large input ZIP files that should not be committed:
+data/pool_dataset.zip
+data/blind_data.zip
+
+# Output files from Code 1 (Intermediate data and trained model):
+data/intermediate_outputs/final_model_for_lecturer_data.joblib   # Trained Machine Learning Model
+data/intermediate_outputs/X_matrix_all.csv                       # Large intermediate data matrix
+data/intermediate_outputs/temp_dir_pool_path.txt                 # Temporary path file
+data/intermediate_outputs/best_window_size.txt                   # Generated configuration file
+data/intermediate_outputs/norm_params_global.json                # Generated configuration file
+data/intermediate_outputs/selected_indices.json                  # Generated configuration file
+data/intermediate_outputs/feature_names.json                     # Generated configuration file
+
+# Output prediction files from Code 2:
+data/05_predictions.csv
